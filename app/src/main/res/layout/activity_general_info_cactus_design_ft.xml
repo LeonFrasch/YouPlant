@@ -90,7 +90,7 @@
                 android:textAppearance="@style/text_style_info"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/soil_requir" />
+                android:text="@string/soil_requir_cactus" />
         </LinearLayout>
     </ScrollView>
 
@@ -101,6 +101,7 @@
         android:layout_height="72dp"
         app:layout_constraintBottom_toBottomOf="parent">
         <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/calendarView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:layout_constraintTop_toTopOf="parent"

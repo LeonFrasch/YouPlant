@@ -13,32 +13,52 @@
         android:theme="@style/Theme.YouPlantJava"
         tools:targetApi="31">
         <activity
+            android:name=".Login"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
             android:name=".GeneralInfoCactusDesignCards"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
         <activity
             android:name=".GeneralInfoTomatoDesignCards"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
         <activity
             android:name=".AddCactus"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
         <activity
             android:name=".AddTomato"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
         <activity
             android:name=".Calendar"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
         <activity
             android:name=".GeneralInfoCactusDesignFT"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
         <activity
             android:name=".GeneralInfoTomatoDesignFT"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
         <activity
             android:name=".SearchTwoPlants"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
         <activity
             android:name=".IntroScreen"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
     </application>
 
 </manifest>

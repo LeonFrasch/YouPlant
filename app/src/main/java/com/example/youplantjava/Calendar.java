@@ -2,6 +2,7 @@ package com.example.youplantjava;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 public class Calendar extends AppCompatActivity {
@@ -10,5 +11,19 @@ public class Calendar extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_calendar);
+
+        findViewById(R.id.plantView).setOnClickListener((v) -> {
+            Intent intent = new Intent(this, SearchTwoPlants.class);
+            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+            startActivity(intent);
+            finish();
+        });
+
+        findViewById(R.id.searchView).setOnClickListener((v) -> {
+            Intent intent = new Intent(this, SearchTwoPlants.class);
+            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+            startActivity(intent);
+            finish();
+        });
     }
 }
