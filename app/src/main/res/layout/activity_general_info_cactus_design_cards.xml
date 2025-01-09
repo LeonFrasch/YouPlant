@@ -56,6 +56,24 @@
         app:layout_constraintEnd_toStartOf="@id/cardWater"
         android:layout_marginTop="568dp"
         android:background="@drawable/button_small"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/cardLight"
+        app:layout_constraintEnd_toEndOf="@id/cardLight"
+        app:layout_constraintBottom_toBottomOf="@id/cardLight"
+        android:text="Direct Sunlight\n6-8h/day"
+        android:textAppearance="@style/info_text_small"
+        android:layout_marginEnd="10dp"/>
+    <ImageView
+        android:layout_width="34dp"
+        android:layout_height="34dp"
+        app:layout_constraintStart_toStartOf="@id/cardLight"
+        app:layout_constraintTop_toTopOf="@id/cardLight"
+        app:layout_constraintBottom_toBottomOf="@id/cardLight"
+        android:background="@drawable/light_icon_foreground"
+        android:layout_marginStart="14dp"/>
+
     <View
         android:id="@+id/cardWater"
         android:layout_width="155dp"
@@ -65,6 +83,23 @@
         app:layout_constraintTop_toTopOf="parent"
         android:layout_marginTop="568dp"
         android:background="@drawable/button_small"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/cardWater"
+        app:layout_constraintEnd_toEndOf="@id/cardWater"
+        app:layout_constraintBottom_toBottomOf="@id/cardWater"
+        android:text="1-2 times a week"
+        android:textAppearance="@style/info_text_small"
+        android:layout_marginEnd="10dp"/>
+    <ImageView
+        android:layout_width="34dp"
+        android:layout_height="34dp"
+        app:layout_constraintStart_toStartOf="@id/cardWater"
+        app:layout_constraintTop_toTopOf="@id/cardWater"
+        app:layout_constraintBottom_toBottomOf="@id/cardWater"
+        android:background="@drawable/water_icon_foreground"
+        android:layout_marginStart="14dp"/>
 
     <View
         android:id="@+id/cardFertilize"
@@ -74,6 +109,23 @@
         app:layout_constraintTop_toBottomOf="@id/cardLight"
         android:layout_marginTop="30dp"
         android:background="@drawable/button_small"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/cardFertilize"
+        app:layout_constraintEnd_toEndOf="@id/cardFertilize"
+        app:layout_constraintBottom_toBottomOf="@id/cardFertilize"
+        android:text="Use a fertilizer \nhigh in \nphosphorus and \npotassium"
+        android:textAppearance="@style/info_text_small"
+        android:layout_marginEnd="10dp"/>
+    <ImageView
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        app:layout_constraintStart_toStartOf="@id/cardFertilize"
+        app:layout_constraintTop_toTopOf="@id/cardFertilize"
+        app:layout_constraintBottom_toBottomOf="@id/cardFertilize"
+        android:background="@drawable/fertilizer_icon_foreground"
+        android:layout_marginStart="5dp"/>
 
     <View
         android:id="@+id/cardSoil"
@@ -83,6 +135,23 @@
         app:layout_constraintTop_toBottomOf="@id/cardWater"
         android:layout_marginTop="30dp"
         android:background="@drawable/button_small"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/cardSoil"
+        app:layout_constraintEnd_toEndOf="@id/cardSoil"
+        app:layout_constraintBottom_toBottomOf="@id/cardSoil"
+        android:text="Well-draining loamy \nsoil \nSlightly acidic to \nneutral pH (6.0-6.8)"
+        android:textAppearance="@style/info_text_small"
+        android:layout_marginEnd="10dp"/>
+    <ImageView
+        android:layout_width="34dp"
+        android:layout_height="34dp"
+        app:layout_constraintStart_toStartOf="@id/cardSoil"
+        app:layout_constraintTop_toTopOf="@id/cardSoil"
+        app:layout_constraintBottom_toBottomOf="@id/cardSoil"
+        android:background="@drawable/soil_icon_foreground"
+        android:layout_marginStart="14dp"/>
 
     <!-- Navigation Bar -->
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -171,4 +240,10 @@
                 app:layout_constraintEnd_toEndOf="@id/searchTab" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Switch" />
 </androidx.constraintlayout.widget.ConstraintLayout>
