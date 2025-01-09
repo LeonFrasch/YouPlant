@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "622040742947",
+    "project_id": "youplant-3f287",
+    "storage_bucket": "youplant-3f287.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:622040742947:android:8f0e56fbd9ffbfaeab4596",
+        "android_client_info": {
+          "package_name": "com.example.youplantjava"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCwdsHXlomvygq5GXjWAwM3w_FG5X4K5ns"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

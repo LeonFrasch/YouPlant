@@ -10,7 +10,7 @@
         Welcome to YouPlant!
     </string>
     <string name="san_marzano_tomato">
-        <u>San Marzano tomato</u>
+        <b><u>San Marzano tomato</u></b>
     </string>
     <string name="plant_overv_tomato">
     Plant overview\n
@@ -33,11 +33,41 @@
     Fertilizer\n
     &#8226;Type: Use a fertilizer high in phosphorus and potassium to promote fruit production. Avoid high-nitrogen fertilizers, as they encourage leafy growth over fruiting.
 </string>
-    <string name="soil_requir">
+    <string name="soil_requir_tomato">
     Soil Requirements\n
         &#8226; Type: Well-draining, loamy soil with good aeration.\n
         &#8226; pH: Slightly acidic to neutral (pH 6.0-6.8).\n
         &#8226; Preparation: Enrich soil with compost or well-rotted manure before planting.\n
+</string>
+
+<string name="saguaro_cactus">
+        <b><u>Saguaro Cactus</u></b>
+    </string>
+<string name="plant_overv_cactus">
+    Plant overview\n
+        &#8226; Scientific Name: Carnegiea gigantea\n
+        &#8226; Type: Slow-growing, long-lived cactus\n
+        &#8226; Origin: Sonoran Desert (Southwestern United States and Northern Mexico)\n
+        &#8226; Description: The Saguaro cactus is an iconic desert plant known for its tall, columnar shape and branching arms. It can live for over 150 years and reach heights of 40 feet. It produces white flowers in late spring, which are the state flower of Arizona, and edible red fruits.
+</string>
+<string name="light_requi_cactus">
+    Light Requirements\n
+        &#8226; Full Sun: Saguaro cacti thrive in bright, direct sunlight and need at least 8-10 hours of sun daily to support healthy growth.
+</string>
+<string name="watering_fr_cactus">
+    Watering\n
+        &#8226; Frequency: Water young saguaros once a month during the growing season (spring and summer). Mature plants require less frequent watering, often surviving solely on natural rainfall.\n
+        &#8226; Technique: Water deeply at the base of the plant, ensuring the soil is completely dry before watering again. Avoid watering in winter, as the plant enters dormancy.
+</string>
+
+<string name="fertilizer_cactus">
+    Fertilizer\n
+    &#8226;Type: Use a cactus-specific fertilizer or a balanced 10-10-10 formula diluted to half strength during the growing season. Avoid over-fertilizing, as this can harm the plant.\n
+    &#8226;Frequency: Apply fertilizer sparingly, 1-2 times during spring and winter. Do not fertilize during dormancy in fall and winter.
+</string>
+<string name="soil_requir_cactus">
+    Soil Requirements\n
+        &#8226; Type: Well-draining sandy or gravelly soil with minimal organic matter.
 </string>
 
 </resources>

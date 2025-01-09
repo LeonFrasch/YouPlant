@@ -23,7 +23,7 @@
         android:layout_height="236dp"
         android:layout_marginTop="85dp"
         android:scaleType="fitCenter"
-        android:src="@mipmap/cactus_image_icon_foreground"
+        android:src="@mipmap/tomato_image_icon_foreground"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -196,7 +196,7 @@
             <ImageButton
                 android:layout_width="32dp"
                 android:layout_height="38dp"
-                android:background="@drawable/plant_icon_active_foreground"
+                android:background="@drawable/plant_icon_foreground"
                 android:id="@+id/plantTab"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -224,7 +224,7 @@
             <ImageButton
                 android:layout_width="35dp"
                 android:layout_height="38dp"
-                android:background="@drawable/search_icon_foreground"
+                android:background="@drawable/search_icon_active_foreground"
                 android:id="@+id/searchTab"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -240,10 +240,4 @@
                 app:layout_constraintEnd_toEndOf="@id/searchTab" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <Switch
-        android:id="@+id/switch1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Switch" />
 </androidx.constraintlayout.widget.ConstraintLayout>

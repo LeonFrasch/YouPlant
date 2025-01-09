@@ -137,7 +137,7 @@
             <ImageButton
                 android:layout_width="32dp"
                 android:layout_height="38dp"
-                android:background="@drawable/plant_icon_active_foreground"
+                android:background="@drawable/plant_icon_foreground"
                 android:id="@+id/plantTab"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -165,7 +165,7 @@
             <ImageButton
                 android:layout_width="35dp"
                 android:layout_height="38dp"
-                android:background="@drawable/search_icon_foreground"
+                android:background="@drawable/search_icon_active_foreground"
                 android:id="@+id/searchTab"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintStart_toStartOf="parent"

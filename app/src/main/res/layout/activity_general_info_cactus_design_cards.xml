@@ -30,7 +30,7 @@
         />
     <TextView
         android:id="@+id/title"
-        android:text="@string/san_marzano_tomato"
+        android:text="@string/saguaro_cactus"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="@style/title_style_info"
@@ -42,7 +42,7 @@
         android:textAppearance="@style/text_style_info"
         android:layout_width="342dp"
         android:layout_height="wrap_content"
-        android:text="@string/plant_overv_tomato"
+        android:text="@string/plant_overv_cactus"
         app:layout_constraintStart_toStartOf="@id/imageTomato"
         app:layout_constraintEnd_toEndOf="@id/imageTomato"
         app:layout_constraintTop_toBottomOf="@id/title"
@@ -62,7 +62,7 @@
         app:layout_constraintTop_toTopOf="@id/cardLight"
         app:layout_constraintEnd_toEndOf="@id/cardLight"
         app:layout_constraintBottom_toBottomOf="@id/cardLight"
-        android:text="Direct Sunlight\n6-8h/day"
+        android:text="Direct Sunlight\n8-10h/day"
         android:textAppearance="@style/info_text_small"
         android:layout_marginEnd="10dp"/>
     <ImageView
@@ -89,7 +89,7 @@
         app:layout_constraintTop_toTopOf="@id/cardWater"
         app:layout_constraintEnd_toEndOf="@id/cardWater"
         app:layout_constraintBottom_toBottomOf="@id/cardWater"
-        android:text="1-2 times a week"
+        android:text="1x/month: \nsping/summer\n0xmonth:\nin fall/winter"
         android:textAppearance="@style/info_text_small"
         android:layout_marginEnd="10dp"/>
     <ImageView
@@ -115,7 +115,7 @@
         app:layout_constraintTop_toTopOf="@id/cardFertilize"
         app:layout_constraintEnd_toEndOf="@id/cardFertilize"
         app:layout_constraintBottom_toBottomOf="@id/cardFertilize"
-        android:text="Use a fertilizer \nhigh in \nphosphorus and \npotassium"
+        android:text="Use cactus \nfertilizer sparingly \n1-2 times in \nspring/summer"
         android:textAppearance="@style/info_text_small"
         android:layout_marginEnd="10dp"/>
     <ImageView
@@ -141,7 +141,7 @@
         app:layout_constraintTop_toTopOf="@id/cardSoil"
         app:layout_constraintEnd_toEndOf="@id/cardSoil"
         app:layout_constraintBottom_toBottomOf="@id/cardSoil"
-        android:text="Well-draining loamy \nsoil \nSlightly acidic to \nneutral pH (6.0-6.8)"
+        android:text="Well-draining\nsandy soil \nNeutral to slightly \nalkaline pH."
         android:textAppearance="@style/info_text_small"
         android:layout_marginEnd="10dp"/>
     <ImageView
@@ -196,7 +196,7 @@
             <ImageButton
                 android:layout_width="32dp"
                 android:layout_height="38dp"
-                android:background="@drawable/plant_icon_active_foreground"
+                android:background="@drawable/plant_icon_foreground"
                 android:id="@+id/plantTab"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -224,7 +224,7 @@
             <ImageButton
                 android:layout_width="35dp"
                 android:layout_height="38dp"
-                android:background="@drawable/search_icon_foreground"
+                android:background="@drawable/search_icon_active_foreground"
                 android:id="@+id/searchTab"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -240,10 +240,4 @@
                 app:layout_constraintEnd_toEndOf="@id/searchTab" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <Switch
-        android:id="@+id/switch1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Switch" />
 </androidx.constraintlayout.widget.ConstraintLayout>
