@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">YouPlant</string>
+    <string name="click_the_p">
+        Click the pot to plant your first seed!
+    </string>
+    <string name="calendar_text">
+            Calendar
+        </string>
+    <string name="welcome_to_">
+        Welcome to YouPlant!
+    </string>
+    <string name="san_marzano_tomato">
+        <u>San Marzano tomato</u>
+    </string>
+    <string name="plant_overv_tomato">
+    Plant overview\n
+        &#8226; Scientific Name: Solanum lycopersicum\n
+        &#8226; Type: Indeterminate heirloom tomato\n
+        &#8226; Origin: Italy (Campania region)\n
+        &#8226; Description: San Marzano tomatoes are prized for their sweet, low-acid flavor and dense, meaty texture, making them ideal for sauces, canning, and cooking. They produce elongated, deep red fruits with few seeds.
+</string>
+    <string name="light_requi_tomato">
+    Light Requirements\n
+        &#8226; Full Sun: San Marzano tomatoes require 6-8 hours of direct sunlight daily for optimal growth and fruit production.
+</string>
+    <string name="watering_fr_tomato">
+    Watering\n
+        &#8226; Frequency: Water deeply 1–2 times a week, ensuring the soil remains consistently moist but not waterlogged.\n
+        &#8226; Technique: Use a drip irrigation system or water at the base to avoid wetting the leaves, which helps prevent fungal diseases. During hot weather, increase watering frequency but avoid shallow watering.
+    </string>
+
+    <string name="fertilizer_tomato">
+    Fertilizer\n
+    &#8226;Type: Use a fertilizer high in phosphorus and potassium to promote fruit production. Avoid high-nitrogen fertilizers, as they encourage leafy growth over fruiting.
+</string>
+    <string name="soil_requir">
+    Soil Requirements\n
+        &#8226; Type: Well-draining, loamy soil with good aeration.\n
+        &#8226; pH: Slightly acidic to neutral (pH 6.0-6.8).\n
+        &#8226; Preparation: Enrich soil with compost or well-rotted manure before planting.\n
+</string>
+
+</resources>
