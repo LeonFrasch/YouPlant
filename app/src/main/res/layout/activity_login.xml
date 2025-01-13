@@ -66,7 +66,7 @@
             app:layout_constraintTop_toTopOf="@id/loginButton"
             app:layout_constraintEnd_toEndOf="@id/loginButton"
             app:layout_constraintBottom_toBottomOf="@id/loginButton"
-            android:text="Login."
+            android:text="Start Experiment."
             android:textAppearance="@style/plant_button_text"/>
     </androidx.constraintlayout.widget.ConstraintLayout>
 
