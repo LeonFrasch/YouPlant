@@ -7,7 +7,7 @@
     android:background="#18D596"
     tools:context=".GeneralInfoTomatoDesignCards">
 
-    <ImageView
+    <ImageButton
         android:id="@+id/escape"
         android:layout_width="26.2dp"
         android:layout_height="26dp"

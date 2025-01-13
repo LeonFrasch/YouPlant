@@ -37,13 +37,13 @@ public class SearchTwoPlants extends AppCompatActivity {
                 firstA = true;
             }
 
-            findViewById(R.id.add_tomato_button).setOnClickListener((v) -> {
+            findViewById(R.id.add_tomato_view).setOnClickListener((v) -> {
                 Intent intent = new Intent(this, AddTomato.class);
                 intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
                 startActivity(intent);
                 finish();
             });
-            findViewById(R.id.add_cactus_button).setOnClickListener((v) -> {
+            findViewById(R.id.add_cactus_view).setOnClickListener((v) -> {
                 Intent intent = new Intent(this, AddCactus.class);
                 intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
                 startActivity(intent);
@@ -51,13 +51,13 @@ public class SearchTwoPlants extends AppCompatActivity {
             });
 
             if (firstA) {   // case: DesignFT
-                findViewById(R.id.info_cactus_button).setOnClickListener((v) -> {
+                findViewById(R.id.info_cactus_view).setOnClickListener((v) -> {
                     Intent intent = new Intent(this, GeneralInfoCactusDesignFT.class);
                     intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
                     startActivity(intent);
                     finish();
                 });
-                findViewById(R.id.info_tomato_button).setOnClickListener((v) -> {
+                findViewById(R.id.info_tomato_view).setOnClickListener((v) -> {
                     Intent intent = new Intent(this, GeneralInfoTomatoDesignFT.class);
                     intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
                     startActivity(intent);
@@ -77,14 +77,14 @@ public class SearchTwoPlants extends AppCompatActivity {
                     finish();
                 });
             }
-            findViewById(R.id.calendarView).setOnClickListener((v) -> {
+            findViewById(R.id.calendarTab).setOnClickListener((v) -> {
                 Intent intent = new Intent(this, Calendar.class);
                 intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
                 startActivity(intent);
                 finish();
             });
 
-            findViewById(R.id.plantView).setOnClickListener((v) -> {
+            findViewById(R.id.plantTab).setOnClickListener((v) -> {
                 Intent intent = new Intent(this, IntroScreen.class);
                 intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
                 startActivity(intent);

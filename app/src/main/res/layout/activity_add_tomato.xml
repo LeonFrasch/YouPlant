@@ -135,7 +135,7 @@
         app:layout_constraintTop_toTopOf="@id/location_view"
         android:layout_marginStart="30dp"
         app:layout_constraintBottom_toBottomOf="@id/location_view"/>
-    <View
+    <ImageButton
         android:id="@+id/cancel_button"
         android:layout_width="110dp"
         android:layout_height="46dp"
@@ -152,7 +152,7 @@
         app:layout_constraintBottom_toBottomOf="@id/cancel_button"
         android:text="Cancel"
         android:textAppearance="@style/button_text"/>
-    <View
+    <ImageButton
         android:id="@+id/add_button"
         android:layout_width="110dp"
         android:layout_height="46dp"

@@ -19,13 +19,13 @@ public class GeneralInfoCactusDesignFT extends AppCompatActivity {
             startActivity(intent);
             finish();
         });
-        findViewById(R.id.calendarView).setOnClickListener((v) -> {
+        findViewById(R.id.calendarTab).setOnClickListener((v) -> {
             Intent intent = new Intent(this, Calendar.class);
             intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
             startActivity(intent);
             finish();
         });
-        findViewById(R.id.plantView).setOnClickListener((v) -> {
+        findViewById(R.id.plantTab).setOnClickListener((v) -> {
             Intent intent = new Intent(this, IntroScreen.class);
             intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
             startActivity(intent);

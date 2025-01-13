@@ -45,7 +45,7 @@
         android:layout_height="72dp"
         app:layout_constraintBottom_toBottomOf="parent">
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/calender_tab"
+            android:id="@+id/calenderView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:layout_constraintTop_toTopOf="parent"
@@ -102,7 +102,7 @@
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/searchTab"
+            android:id="@+id/searchView"
             app:layout_constraintStart_toEndOf="@id/plantView"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
@@ -111,7 +111,7 @@
                 android:layout_width="35dp"
                 android:layout_height="38dp"
                 android:background="@drawable/search_icon_foreground"
-                android:id="@+id/searchView"
+                android:id="@+id/searchTab"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"/>
@@ -121,9 +121,9 @@
                 android:layout_height="10dp"
                 android:text="Search"
                 android:textAppearance="@style/tab_text"
-                app:layout_constraintTop_toBottomOf="@id/searchView"
-                app:layout_constraintStart_toStartOf="@id/searchView"
-                app:layout_constraintEnd_toEndOf="@id/searchView" />
+                app:layout_constraintTop_toBottomOf="@id/searchTab"
+                app:layout_constraintStart_toStartOf="@id/searchTab"
+                app:layout_constraintEnd_toEndOf="@id/searchTab" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
