@@ -14,7 +14,9 @@ import android.widget.Toast;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.firestore.FirebaseFirestore;
 
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.UUID;
@@ -35,6 +37,7 @@ public class Login extends AppCompatActivity {
 
         db = FirebaseFirestore.getInstance();
 
+        sessionID = UUID.randomUUID().toString();
         SharedPreferences sharedPreferences = getSharedPreferences("session_data", MODE_PRIVATE);
         SharedPreferences.Editor editor = sharedPreferences.edit();
         editor.putString("session_id", sessionID);
@@ -61,7 +64,17 @@ public class Login extends AppCompatActivity {
             Map<String, Object> sessionData = new HashMap<>();
             sessionData.put("session_user", auth.getUid());
             sessionData.put("session_id", sessionID);
-            sessionData.put("start_time", System.currentTimeMillis());
+
+            long start_time = System.currentTimeMillis();
+            Date date = new Date(start_time);
+
+            // Format für das Datum und die Uhrzeit
+            SimpleDateFormat dateFormat = new SimpleDateFormat("dd.MM.yyyy HH:mm:ss");
+
+            String formatted_start_Date = dateFormat.format(date);
+
+            sessionData.put("start_time", formatted_start_Date);
+            sessionData.put("end_time", 0);
             sessionData.put("pages", new ArrayList<>());
 
             db.collection("sessions").document(sessionID).set(sessionData).addOnSuccessListener(aVoid -> Log.d("Firestore", "Session started")).addOnFailureListener(e -> Log.w("Firestore", "Error starting session", e));

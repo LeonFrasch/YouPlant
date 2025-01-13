@@ -11,6 +11,8 @@ import android.util.Log;
 import com.google.firebase.firestore.FieldValue;
 import com.google.firebase.firestore.FirebaseFirestore;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.UUID;
@@ -49,8 +51,17 @@ public class AddTomato extends AppCompatActivity {
             finish();
         });
         findViewById(R.id.add_button).setOnClickListener((v) -> {
+
+            long end_time = System.currentTimeMillis();
+            Date date = new Date(end_time);
+
+            // Format für das Datum und die Uhrzeit
+            SimpleDateFormat dateFormat = new SimpleDateFormat("dd.MM.yyyy HH:mm:ss");
+
+            String formatted_end_Date = dateFormat.format(date);
+
             db.collection("sessions").document(sessionID)
-                    .update("end_time", System.currentTimeMillis())
+                    .update("end_time", formatted_end_Date)
                     .addOnSuccessListener(aVoid -> Log.d("Firestore", "Session ended"))
                     .addOnFailureListener(e -> Log.w("Firestore", "Error ending session", e));
             Intent intent = new Intent(this, Login.class);

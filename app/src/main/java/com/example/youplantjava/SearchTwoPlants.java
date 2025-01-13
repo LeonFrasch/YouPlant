@@ -37,7 +37,7 @@ public class SearchTwoPlants extends AppCompatActivity {
         auth = FirebaseAuth.getInstance();
 
         db.collection("firstA").get().addOnSuccessListener(queryDocumentSnapshots0 -> {
-            List<String> firstAUIDs = new ArrayList<>();
+        /*    List<String> firstAUIDs = new ArrayList<>();
             if (!queryDocumentSnapshots0.isEmpty()) {
                 for (DocumentSnapshot document : queryDocumentSnapshots0.getDocuments()) {
                     Map<String, Object> firstAs = document.getData();
@@ -46,6 +46,20 @@ public class SearchTwoPlants extends AppCompatActivity {
             }
             if (firstAUIDs.contains(auth.getUid())) { // User ist A
                 firstA = true;
+            }*/
+
+            if (auth.getUid().equals("uPnyK5VV5WZb5ZZyOZ1e7zSHaOA3")) {
+                firstA = true;
+                db.collection("sessions").document(sessionID)
+                        .update("session_user", "User A")
+                        .addOnSuccessListener(aVoid -> Log.d("Firestore", "Page data saved"))
+                        .addOnFailureListener(e -> Log.w("Firestore", "Error saving page data", e));
+            } else {
+                firstA = false;
+                db.collection("sessions").document(sessionID)
+                        .update("session_user", "User B")
+                        .addOnSuccessListener(aVoid -> Log.d("Firestore", "Page data saved"))
+                        .addOnFailureListener(e -> Log.w("Firestore", "Error saving page data", e));
             }
 
             findViewById(R.id.add_tomato_view).setOnClickListener((v) -> {
@@ -75,13 +89,13 @@ public class SearchTwoPlants extends AppCompatActivity {
                     finish();
                 });
             } else {   // case: DesignCards
-                findViewById(R.id.info_cactus_button).setOnClickListener((v) -> {
+                findViewById(R.id.info_cactus_view).setOnClickListener((v) -> {
                     Intent intent = new Intent(this, GeneralInfoCactusDesignCards.class);
                     intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
                     startActivity(intent);
                     finish();
                 });
-                findViewById(R.id.info_tomato_button).setOnClickListener((v) -> {
+                findViewById(R.id.info_tomato_view).setOnClickListener((v) -> {
                     Intent intent = new Intent(this, GeneralInfoTomatoDesignCards.class);
                     intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
                     startActivity(intent);
