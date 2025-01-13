@@ -160,7 +160,7 @@
             app:layout_constraintStart_toStartOf="parent"
             android:layout_marginStart="10dp"
             android:layout_marginTop="10dp"
-            android:background="@mipmap/tomato_picture_small_icon_foreground" />
+            android:background="@drawable/image_tomato_small" />
     </androidx.constraintlayout.widget.ConstraintLayout>
     <!-- Cactus View -->
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -257,7 +257,7 @@
             app:layout_constraintStart_toStartOf="parent"
             android:layout_marginStart="10dp"
             android:layout_marginTop="10dp"
-            android:background="@mipmap/cactuss_picture_small_icon_foreground" />
+            android:background="@drawable/image_cactus_small" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 

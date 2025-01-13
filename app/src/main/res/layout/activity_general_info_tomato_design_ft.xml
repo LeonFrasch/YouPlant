@@ -22,31 +22,42 @@
         android:layout_width="342dp"
         android:layout_height="228dp"
         android:layout_marginTop="85dp"
-        android:background="@mipmap/tomato_image_icon_foreground"
+        android:background="@drawable/image_tomato_full"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         />
+    <View
+        android:id="@+id/space"
+        android:layout_width="match_parent"
+        android:layout_height="13dp"
+        app:layout_constraintTop_toBottomOf="@id/imageTomato"
+        app:layout_constraintBottom_toTopOf="@id/title"/>
     <TextView
         android:id="@+id/title"
         android:text="@string/san_marzano_tomato"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="@style/title_style_info"
-        app:layout_constraintTop_toBottomOf="@id/imageTomato"
-        app:layout_constraintStart_toStartOf="@id/imageTomato"
+        app:layout_constraintTop_toBottomOf="@id/space"
+        app:layout_constraintStart_toStartOf="@id/scroll"
         />
     <ScrollView
-        android:id="@+id/scoll"
-        android:layout_width="342dp"
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
         android:layout_height="470dp"
-        app:layout_constraintStart_toStartOf="@id/imageTomato"
-        app:layout_constraintEnd_toEndOf="@id/imageTomato"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/title">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="13dp"/>
             <TextView
                 android:id="@+id/text1"
                 android:textAppearance="@style/text_style_info"
