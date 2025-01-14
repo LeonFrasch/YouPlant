@@ -122,7 +122,7 @@
         app:layout_constraintStart_toStartOf="@id/cardLight"
         app:layout_constraintTop_toBottomOf="@id/cardLight"
         app:layout_constraintBottom_toTopOf="@id/tabView"
-        android:layout_marginTop="15dpdp"
+        android:layout_marginTop="15dp"
         android:background="@drawable/button_small"/>
     <TextView
         android:layout_width="wrap_content"
