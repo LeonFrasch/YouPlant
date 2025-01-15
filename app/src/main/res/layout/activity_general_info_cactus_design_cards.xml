@@ -76,7 +76,7 @@
         app:layout_constraintTop_toTopOf="@id/cardLight"
         app:layout_constraintEnd_toEndOf="@id/cardLight"
         app:layout_constraintBottom_toBottomOf="@id/cardLight"
-        android:text="Direct Sunlight\n8-10h/day"
+        android:text="Direct Sunlight\n8h/day"
         android:textAppearance="@style/info_text_small"
         android:layout_marginEnd="10dp"/>
     <ImageView
@@ -102,7 +102,7 @@
         app:layout_constraintTop_toTopOf="@id/cardWater"
         app:layout_constraintEnd_toEndOf="@id/cardWater"
         app:layout_constraintBottom_toBottomOf="@id/cardWater"
-        android:text="1x/month: \nsping/summer\n0xmonth:\nin fall/winter"
+        android:text="1x/season: \nsping/summer\n0xmonth:\nin fall/winter"
         android:textAppearance="@style/info_text_small"
         android:layout_marginEnd="10dp"/>
     <ImageView

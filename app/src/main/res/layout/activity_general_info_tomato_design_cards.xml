@@ -77,7 +77,7 @@
         app:layout_constraintTop_toTopOf="@id/cardLight"
         app:layout_constraintEnd_toEndOf="@id/cardLight"
         app:layout_constraintBottom_toBottomOf="@id/cardLight"
-        android:text="Direct Sunlight\n6-8h/day"
+        android:text="Direct Sunlight\n10h/day"
         android:textAppearance="@style/info_text_small"
         android:layout_marginEnd="10dp"/>
     <ImageView
@@ -155,7 +155,7 @@
         app:layout_constraintTop_toTopOf="@id/cardSoil"
         app:layout_constraintEnd_toEndOf="@id/cardSoil"
         app:layout_constraintBottom_toBottomOf="@id/cardSoil"
-        android:text="Well-draining loamy \nsoil \nSlightly acidic to \nneutral pH (6.0-6.8)"
+        android:text="Well-draining loamy \nsoil \nSlightly acidic to \nneutral pH (5.8-6.6)"
         android:textAppearance="@style/info_text_small"
         android:layout_marginEnd="10dp"/>
     <ImageView
