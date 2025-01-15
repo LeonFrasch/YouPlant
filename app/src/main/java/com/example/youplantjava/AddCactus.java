@@ -8,6 +8,7 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.Button;
+import android.widget.Toast;
 
 import com.google.firebase.firestore.FieldValue;
 import com.google.firebase.firestore.FirebaseFirestore;
@@ -63,6 +64,9 @@ public class AddCactus extends AppCompatActivity {
                     .update("end_time", formatted_end_Date)
                     .addOnSuccessListener(aVoid -> Log.d("Firestore", "Session ended"))
                     .addOnFailureListener(e -> Log.w("Firestore", "Error ending session", e));
+            runOnUiThread(() -> {
+                Toast.makeText(AddCactus.this, "Experiment ended!", Toast.LENGTH_SHORT).show();
+            });
             Intent intent = new Intent(this, Login.class);
             intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
             startActivity(intent);

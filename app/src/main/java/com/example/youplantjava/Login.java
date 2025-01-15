@@ -59,7 +59,7 @@ public class Login extends AppCompatActivity {
     private void loginUser(String email, String password) {
         auth.signInWithEmailAndPassword(email, password).addOnSuccessListener((result) -> {
             runOnUiThread(() -> {
-                Toast.makeText(Login.this, "Login successfully!", Toast.LENGTH_SHORT).show();
+                Toast.makeText(Login.this, "Experiment started!", Toast.LENGTH_SHORT).show();
             });
             Map<String, Object> sessionData = new HashMap<>();
             sessionData.put("session_user", auth.getUid());
